@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // --- Efekt maszyny do pisania dla napisu Hero ---
     const typewriterElement = document.querySelector('.typewriter');
-    const texts = ['doświadczenia w sieci.', 'nowoczesne aplikacje.', 'piękne interfejsy.'];
+    const texts = ['gospodarstwo.', 'ekologiczne uprawy.', 'inteligentne rolnictwo.'];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
