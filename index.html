@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Kowalski - Frontend Developer</title>
+    <meta name="description" content="Portfolio nowoczesnego Frontend Developera. Sprawdź moje projekty i umiejętności.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Ikony -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tło animowane -->
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Nawigacja -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Kowalski<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#home">Start</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sekcja Hero -->
+        <section id="home" class="hero">
+            <div class="hero-content fade-in-up">
+                <span class="greeting">Witaj w moim cyfrowym świecie 👋</span>
+                <h1 class="title">Cześć, jestem <span class="gradient-text">Jan Kowalski</span></h1>
+                <h2 class="subtitle">Tworzę niesamowite <span class="typewriter">doświadczenia w sieci.</span></h2>
+                <p class="description">
+                    Projektuję i programuję nowoczesne, szybkie i przepiękne aplikacje internetowe. Moim celem jest przekuwanie pomysłów w cyfrową rzeczywistość.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Zobacz moje prace</a>
+                    <a href="#contact" class="btn btn-outline">Napisz do mnie</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-up delay-1">
+                <div class="glass-card profile-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Jan Kowalski" class="profile-img">
+                    <div class="profile-info">
+                        <h3>Frontend Developer</h3>
+                        <p>Warszawa, Polska</p>
+                    </div>
+                    <div class="floating-badge badge-1"><i class="fab fa-react"></i> React</div>
+                    <div class="floating-badge badge-2"><i class="fab fa-js"></i> JS</div>
+                    <div class="floating-badge badge-3"><i class="fab fa-css3-alt"></i> CSS3</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Umiejętności -->
+        <section id="skills" class="skills section-padding">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Technologie, których używam</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card glass-card fade-in-up shadow-hover">
+                    <i class="fab fa-html5 skill-icon" style="color: #E34F26;"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantyczny, dostępny i zoptymalizowany pod kątem SEO kod.</p>
+                </div>
+                <div class="skill-card glass-card fade-in-up delay-1 shadow-hover">
+                    <i class="fab fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                    <h3>CSS3 / SASS</h3>
+                    <p>Nowoczesne layouty z użyciem Flexbox, Grid oraz animacji.</p>
+                </div>
+                <div class="skill-card glass-card fade-in-up delay-2 shadow-hover">
+                    <i class="fab fa-js skill-icon" style="color: #F7DF1E;"></i>
+                    <h3>JavaScript</h3>
+                    <p>Dynamiczne interfejsy i czysty kod w nowoczesnym standardzie ES6+.</p>
+                </div>
+                <div class="skill-card glass-card fade-in-up shadow-hover">
+                    <i class="fab fa-react skill-icon" style="color: #61DAFB;"></i>
+                    <h3>React.js</h3>
+                    <p>Budowa skalowalnych SPA i reużywalnych komponentów.</p>
+                </div>
+                <div class="skill-card glass-card fade-in-up delay-1 shadow-hover">
+                    <i class="fas fa-leaf skill-icon" style="color: #06B6D4;"></i>
+                    <h3>Tailwind CSS</h3>
+                    <p>Szybkie prototypowanie i stylowanie utility-first.</p>
+                </div>
+                <div class="skill-card glass-card fade-in-up delay-2 shadow-hover">
+                    <i class="fab fa-git-alt skill-icon" style="color: #F05032;"></i>
+                    <h3>Git / GitHub</h3>
+                    <p>Zarządzanie wersjami i sprawna praca w zespole programistów.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Projekty -->
+        <section id="projects" class="projects section-padding">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Wybrane realizacje</h2>
+                <div class="line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Projekt 1 -->
+                <article class="project-card glass-card fade-in-up shadow-hover">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dashboard App" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">Styled Components</span>
+                        </div>
+                        <h3 class="project-title">Fintech Dashboard</h3>
+                        <p class="project-desc">Aplikacja analityczna dla branży finansowej w ciemnym motywie. Umożliwia śledzenie wydatków i generowanie raportów w czasie rzeczywistym.</p>
+                    </div>
+                </article>
+
+                <!-- Projekt 2 -->
+                <article class="project-card glass-card fade-in-up delay-1 shadow-hover">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <h3 class="project-title">Katalog Produktów</h3>
+                        <p class="project-desc">Sklep internetowy z płynnymi animacjami, filtrowaniem produktów oraz responsywnym designem dostosowanym do urządzeń mobilnych.</p>
+                    </div>
+                </article>
+
+                <!-- Projekt 3 -->
+                <article class="project-card glass-card fade-in-up delay-2 shadow-hover">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Landing Page" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Vite</span>
+                            <span class="tag">Three.js</span>
+                            <span class="tag">GSAP</span>
+                        </div>
+                        <h3 class="project-title">Studio Kreatywne</h3>
+                        <p class="project-desc">Spektakularny landing page z efektami 3D, wciągającym scrollem i zaawansowanymi animacjami elementów interfejsu.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sekcja Kontakt -->
+        <section id="contact" class="contact section-padding">
+            <div class="glass-card contact-wrapper fade-in-up">
+                <div class="contact-info">
+                    <h2 class="section-title">Porozmawiajmy!</h2>
+                    <p>Otarty na nowe wyzwania i współpracę. Jeśli masz pomysł na projekt, napisz do mnie.</p>
+                    <ul class="contact-methods">
+                        <li><i class="fas fa-envelope"></i> kontakt@jankowalski.dev</li>
+                        <li><i class="fas fa-phone-alt"></i> +48 123 456 789</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Warszawa, Polska</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Dribbble" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Imię i nazwisko</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Adres E-mail</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Twoja wiadomość</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Wyślij wiadomość <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jan Kowalski. Stworzone z pasją do kodu.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
